@@ -1,0 +1,153 @@
+@charset"utf-8";
+
+.top a{color: rgb(110, 110, 110);
+  text-shadow: none;}
+
+  .main{padding-top: 120px;}
+
+.games{
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 10px;
+  max-width: 100%;
+  font-size: 12px;
+text-align: center;
+}
+
+.games::after{
+  content: '';
+  display:block;
+width: 80px;
+height: 3px;
+background-color: #000;
+margin-top: 10px;
+left:50%;
+transform: translateX(-50%);
+position:absolute;
+}
+
+.device{padding: 30px;
+  margin: 20px;
+  margin-top: 30px;
+  background-color: #eeeeee;
+}
+
+.device-titel{display: flex;
+align-items: center;
+justify-content: center;
+font-size: 14px;
+}
+
+.device-titel img{width: 35px;
+height: 30px;
+margin-left: 8px;}
+
+.main h2{display: flex;
+color: rgb(0, 0, 0);}
+
+
+.game-list {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 0px;
+  justify-content: center;
+  overflow: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */}
+.game-list::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+
+}
+
+.game-list li {
+  flex-shrink: 0;
+  width: 350px;
+  padding: 40px;
+}
+
+.game-list li:first-child {
+  margin-left: 0;
+}
+
+.game-list dl {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+
+.game-list dt {
+  font-weight: bold;
+}
+
+.games-tag {
+  background-color: rgb(124, 124, 124);
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  min-width: 130px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+}
+
+.game-list li:hover {
+  background-color: #cccccc;
+}
+
+
+@media(max-width:800px){
+
+  .top a{
+    color: #ffffff;
+    text-shadow: 1px 2px 3px #000000;}
+
+
+  .main{padding-top: 50px;}
+
+  .first-view {
+    height: calc(100vh - 50px);
+  }
+
+  .games{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+  }
+
+  .game-list {
+    padding-top: 0px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0px;
+  }
+
+  .game-list li {
+    padding: 5px;
+    width: 200px;
+  }
+
+  .games-tag {
+    background-color: rgb(124, 124, 124);
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    min-width: 130px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .device{padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+   margin: 20px 5px;}
+
+.device-titel{font-size: 12px;}
+
+}

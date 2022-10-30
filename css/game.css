@@ -1,0 +1,138 @@
+@charset "ctf-8";
+
+.top a {
+  color: rgb(110, 110, 110);
+  text-shadow: none;
+}
+
+.main {
+  padding-top: 110px;
+}
+
+
+.game{
+  padding-top: 70px;
+  padding-bottom: 0px;
+  padding-left: 8%;
+  padding-right: 8%;
+  max-width: 100%;
+  font-size: 12px;
+text-align: center;
+}
+
+.game-icon{display: flex;
+padding-top: 0px;
+align-items: center;
+}
+
+.game-icon a{background-color: rgb(218, 60, 60);
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  min-width: 200px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;}
+
+.icon{width: 40%;}
+
+.text {
+  width: 70%;
+  font-size: 18px;
+}
+
+.text p {
+  padding-top: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+}
+
+
+
+.list ul{display: flex;
+padding-top: 40px;
+padding-bottom: 40px;
+padding-left: 10px;
+padding-right: 10px;
+background-color: #eeeeee;
+margin-bottom: 30px;
+justify-content: flex-start;
+overflow: scroll;
+}
+
+.list li{
+  flex-shrink: 0;
+  width: 260px;
+  margin-left: 5px;
+}
+.list li:first-child{
+  margin-left: 0;
+}
+
+    @media (max-width: 800px) {
+      .top a {
+        color: #ffffff;
+        text-shadow: 1px 2px 3px #000000;
+      }
+
+      .icon {
+        width: 100%;
+      }
+
+      .game h1 {
+        font-size: 22px;
+      }
+
+      .icon img {
+        width: 70%;
+      }
+
+      .game-icon a {
+        background-color: rgb(218, 60, 60);
+        font-size: 15px;
+        color: #fff;
+        display: inline-block;
+        min-width: 200px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+
+      .main {
+        padding-top: 110px;
+      }
+
+      .first-view {
+        height: calc(100vh - 50px);
+      }
+
+      .game {
+        padding: 0;
+      }
+
+      .game-icon {
+        display: block;
+      }
+
+      .text {
+        width: 100%;
+        font-size: 13px;
+        padding: 20px;
+        line-height: 19px;
+      }
+
+      .text p{padding-top: 10px;}
+
+.list li{width: 200px;}
+
+.list video{width: 200px;}
+      .list ul {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }

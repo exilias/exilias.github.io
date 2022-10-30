@@ -1,0 +1,305 @@
+@charset "ctf-8";
+
+.top a {
+  color: rgb(110, 110, 110);
+  text-shadow: none;
+}
+
+.main {
+  padding-top: 110px;
+}
+
+.about {
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 10px;
+  max-width: 100%;
+  font-size: 12px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #000;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  padding-top: 26px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.about-me img {
+  width: 270px;
+  height: auto;
+  position: relative;
+  padding-right: 20px;
+}
+
+.text {
+  display: block;
+  width: 50%;
+  padding-right: 60px;
+  padding-left: 20px;
+}
+
+.text h3 {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.text p {
+  line-height: 30px;
+}
+
+.about-logo {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.about-logo img {
+  width: 50px;
+}
+
+.about-logo a {
+  padding-right: 0;
+}
+
+
+.about-text h2 {
+  text-align: center;
+}
+
+.box26 {
+  position: relative;
+  margin: 2em 10%;
+  padding: 1em 1em;
+  border: solid 3px #000000;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.box26 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 20px;
+  background: #FFF;
+  color: #000000;
+  font-weight: bold;
+}
+
+.box26 p {
+  margin: 0;
+  padding: 0;
+}
+
+.list-margin-a {
+  margin-bottom: 6px;
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 24px;
+  list-style: disc;
+  list-style-position: inside;
+  text-indent: -1.2em;
+  padding: 0 0 0 2em;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: start;
+}
+
+.msr_bread06 {
+  font-size: 12px;
+  letter-spacing: -.4em;
+  text-align: center;
+}
+
+.msr_bread06 li {
+  margin: 0 5px 5px 0;
+  background: #ddd;
+  color: #000;
+  line-height: 100%;
+  letter-spacing: normal;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.msr_bread06 li a {
+  padding: 8px 12px 8px 12px;
+  color: #000;
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.msr_bread06 li:first-child a {
+  padding-left: 12px;
+}
+
+/* hover */
+.msr_bread06 li:hover {
+  background: #000;
+}
+
+.msr_bread06 a:hover {
+  color: #fff;
+}
+
+.msr_bread06 li a:hover::after {
+  border-left: 8px solid #000;
+}
+
+.list-margin {
+  margin-bottom: 45px;
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 22px;
+  list-style: decimal;
+  list-style-position: inside;
+  text-indent: -1.2em;
+  padding: 0 0 0 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main h2 {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 10px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.list-margin a {
+  color: rgb(207, 0, 0);
+  text-shadow: none
+}
+
+mark {
+  background-color: rgb(255, 230, 87);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 3px;
+  border-radius: 30px
+}
+
+.box11 {
+  position: relative;
+  margin: 2em 10%;
+  padding: 1em 1em;
+  color: #000000;
+  background: white;
+  border-left: solid 2px #a5a5a5;
+  box-shadow: 0 0px 2px rgb(121, 121, 121);
+}
+
+.box11 p {
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (max-width: 800px) {
+
+.main {
+    padding-top: 45px;
+  }
+
+  .about {
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  .about-me {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .about-me img{padding-right: 0;
+  padding-top: 10px;
+width: 220px;
+height: auto;}
+
+    .text {
+    padding: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .text h3{padding-left: 0;
+  padding-bottom: 10px;
+font-size: 18px;}
+
+.text p{line-height: 19px;
+font-size: 12px;
+text-align: left;}
+
+.about-logo{display:flex;
+  margin-top:  0;
+  margin-left: 170px;
+  width: 120px;
+justify-content: flex-end;
+}
+.about-logo a {
+  margin-right: 10px;
+}
+
+
+.list-margin-a{
+  font-size: 14px;
+}
+
+.box26 {
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  padding-top: 15px;
+  padding-left: 7px;
+}
+
+.box11 {
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 5px;
+}
+
+
+.box11 h2{font-size: 20px;
+padding-top: 40px;
+padding-bottom: 20px;}
+
+.list-margin{margin-bottom: 20px;
+font-size: 13px;}
+
+
+.top a {
+  color: #ffffff;
+  text-shadow: 1px 2px 3px #000000;
+}
+}

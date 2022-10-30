@@ -1,0 +1,302 @@
+@charset"utf-8";
+
+
+.video_wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.video_wrapper>video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.games {
+  background-color: #eeeeee;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.games h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.games h3:hover {
+  color: #ce3b3b;
+}
+
+.tag {
+  display: flex;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+
+}
+
+.game-list {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  justify-content: center;
+  overflow: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+  justify-content: center}
+.game-list::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+
+.game-list li {
+  flex-shrink: 0;
+  width: 350px;
+  padding: 40px;
+}
+
+.game-list li:first-child {
+  margin-left: 0;
+}
+
+.game-list dl {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+
+.game-list dt {
+  font-weight: bold;
+}
+
+.games-tag {
+  background-color: rgb(124, 124, 124);
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  min-width: 130px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+}
+
+.game-list li:hover {
+  background-color: #cccccc;
+}
+
+.projects {
+  background-color: #da1c1ce1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.projects h1 {
+  color: #eeeeee;
+  font-weight: bold;
+  text-align: center
+}
+
+.projects h3 {
+  color:#eeeeee
+}
+
+.projects h3:hover {
+  color: #520404;
+}
+
+
+.projects-list {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  overflow: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+        scrollbar-width: none;       /* Firefox 対応 */
+        justify-content: center}
+    .projects-list::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+        display:none;
+    }
+
+
+
+
+.projects-list li {
+  flex-shrink: 0;
+  width: 350px;
+  padding: 40px;
+}
+
+.projects-list li:first-child {
+  margin-left: 0;
+}
+
+.projects-list dl {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+
+.projects-list dt {
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+.projects-list li:hover {
+  background-color: #bd1616;
+}
+
+.about {
+  background-color: #eeeeee;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about h3:hover {
+  color: #ce3b3b;
+}
+
+.about-main{display: flex;
+justify-content: space-between;
+width: 930px;
+max-width: 90%;
+margin-top: 6px;
+margin-left: auto;
+margin-right: auto;
+align-items: flex-start;}
+
+.about img{width: 3000px;}
+
+.about-text{
+  max-width: 500px;
+  margin-left:40px;
+}
+
+.about-text h2 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-top: 18px;
+    color: #4e0000e1;
+}
+
+.about-text p{
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 0px;
+
+}
+.about-logo{
+ text-align: right;
+ margin-top: 15px;
+}
+.about-logo img{
+  width: 50px;
+}
+
+@media (max-width: 800px) {
+  .first-view {
+    max-height: calc(100vh - 300px);
+  }
+
+.video_wrapper {
+  position: relative;
+  width: 100vw;
+  height: 400px;
+  overflow: hidden;
+}
+
+.video_wrapper>video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  max-height: 100%;
+}
+
+  .tag {
+    padding-top: 30px;
+    font-size: 10px;
+    display: flex;
+  }
+.tag h1{padding-left: 20px;}
+  .tag h3{padding-left: 10px;}
+
+  .games{
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+
+  .game-list {
+    padding-top: 0px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  .game-list li {
+    padding: 5px;
+  }
+
+  .projects{
+   padding: 0;
+  }
+
+  .projects-list {
+    padding-top: 0px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  .projects-list li {
+    padding: 5px;
+    padding-bottom: 30px;
+  }
+.about{
+padding-top: 0;
+}
+  .about-main{
+    display: block;
+width: 300px;
+text-align: center;}
+
+  .about img{
+    width: 95%;
+    margin: 000 auto;
+  }
+.about-text p{
+  margin-top: 1px;
+  margin-left: 0;
+  font-size: 12px;
+}
+.about-text h2{
+  color: #4e0000e1;
+  text-align: center;
+  font-size: 18px;
+}
+
+  .about-text {
+    margin-top: 10px;
+    margin-left: 0;
+}
+.about-logo{
+  text-align: right;
+  margin-top: 15px;
+ }
+
+ .about-logo img{
+   width: 40px;
+  }
+}
