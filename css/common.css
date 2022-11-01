@@ -100,6 +100,19 @@ img {
   font-family: 'Dela Gothic One', cursive;
 }
 
+.games-tag {
+  background-color: rgb(124, 124, 124);
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+  min-width: 100px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+}
+
 
 @media(max-width:800px) {
 
