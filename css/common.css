@@ -34,7 +34,6 @@ img {
   background-color: transparent;
   max-width: 1200px;
   height: 110px;
-  ;
   margin-left: auto;
   margin-right: auto;
   padding-left: 40px;
@@ -44,6 +43,10 @@ img {
   align-items: center;
   position: absolute;
   z-index: 10;
+}
+
+.nav-logo {
+  display: none;
 }
 
 .toggle-menu-button {
@@ -109,12 +112,14 @@ img {
     margin-top: 30px;
   }
 
+  .site-menu ul li {
+    margin-left: 0px;
+  }
+  
   .header {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #ffffff;
     height: 70px;
     z-index: 10;
   }
@@ -130,26 +135,42 @@ img {
     width: 200px;
   }
 
+  .nav-logo {
+    width: 180px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-logo.is-show {
+    display: block;
+  }
+
   .header-site-menu {
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     right: 0;
     color: #ffffff;
+    backdrop-filter: blur(5px);
     background-color: #da1c1ce1;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 50px;
     display: none;
   }
 
   .header-site-menu.is-show {
+    position: fixed;
     display: block;
   }
 
   .toggle-menu-button {
+    position: fixed;
     display: block;
+    right: 0;
     width: 44px;
     height: 44px;
+    margin-right: 10px;
     background-image: url(../images/akira-illust.svg);
     background-size: 100%;
     background-position: center;
@@ -157,7 +178,10 @@ img {
     background-color: transparent;
     border-radius: 30%;
     outline: none;
+    border-style: solid;
+    border-width: 0px;
     border-color: #000;
+    z-index: 10;
   }
 
 
@@ -168,8 +192,6 @@ img {
   .copyright {
     margin-top: 40px;
   }
-
-
 
 
 }

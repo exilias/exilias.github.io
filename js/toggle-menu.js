@@ -1,12 +1,19 @@
 window.addEventListener('load', function () {
     var $button = document.querySelector('.toggle-menu-button');
     var $menu = document.querySelector('.header-site-menu');
-    $button.addEventListener('click', function () {
-        if ($menu.classList.contains('is-show')) {
-            $menu.classList.remove('is-show');
+    var $logo = document.querySelector('.nav-logo');
+
+    var updateClass = function(element) {
+        if (element.classList.contains('is-show')) {
+            element.classList.remove('is-show');
         }
         else {
-            $menu.classList.add('is-show');
+            element.classList.add('is-show');
         }
+    };
+
+    $button.addEventListener('click', function () {
+      updateClass($menu);  
+      updateClass($logo);
     });
 });
