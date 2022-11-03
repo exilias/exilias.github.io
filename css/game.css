@@ -75,7 +75,7 @@ overflow: scroll;
     @media (max-width: 800px) {
       .top a {
         color: #ffffff;
-        text-shadow: 1px 2px 3px #000000;
+        text-shadow: 1.5px 1.5px 0px #1b1b1b;
       }
 
       .icon {
