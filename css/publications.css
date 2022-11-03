@@ -82,6 +82,16 @@ mark {
   text-shadow: none;
 }
 
+a.button {
+  color: #ffffff;
+  background-color: #da1c1ce1;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 6px;
+  margin: 0 5px 5px 0;
+  padding: 4px 10px 4px 10px;
+}
+
 @media(max-width:800px) {
 
   .main {
