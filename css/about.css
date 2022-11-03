@@ -223,7 +223,7 @@ mark {
 
 @media (max-width: 800px) {
 
-.main {
+  .main {
     padding-top: 45px;
   }
 
@@ -239,67 +239,79 @@ mark {
     padding-top: 15px;
   }
 
-  .about-me img{padding-right: 0;
-  padding-top: 10px;
-width: 220px;
-height: auto;}
+  .about-me img {
+    padding-right: 0;
+    padding-top: 10px;
+    width: 220px;
+    height: auto;
+  }
 
-    .text {
+  .text {
     padding: 20px;
     margin-right: 5%;
     margin-left: 5%;
     width: 90%;
   }
 
-  .text h3{padding-left: 0;
-  padding-bottom: 10px;
-font-size: 18px;}
+  .text h3 {
+    padding-left: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
 
-.text p{line-height: 19px;
-font-size: 12px;
-text-align: left;}
+  .text p {
+    line-height: 19px;
+    font-size: 12px;
+    text-align: left;
+  }
 
-.about-logo{display:flex;
-  margin-top:  0;
-  margin-left: 170px;
-  width: 120px;
-justify-content: flex-end;
-}
-.about-logo a {
-  margin-right: 10px;
-}
+  .about-logo {
+    display: flex;
+    margin-top: 0;
+    margin-left: 170px;
+    width: 120px;
+    justify-content: flex-end;
+  }
 
-
-.list-margin-a{
-  font-size: 14px;
-}
-
-.box26 {
-  margin-top: 40px;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 10px;
-  padding-top: 15px;
-  padding-left: 7px;
-}
-
-.box11 {
-  margin-right: 5%;
-  margin-left: 5%;
-  padding: 5px;
-}
+  .about-logo a {
+    margin-right: 10px;
+  }
 
 
-.box11 h2{font-size: 20px;
-padding-top: 40px;
-padding-bottom: 20px;}
+  .list-margin-a {
+    font-size: 14px;
+  }
 
-.list-margin{margin-bottom: 20px;
-font-size: 13px;}
+  .box26 {
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 7px;
+  }
+
+  .box11 {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 5px;
+  }
 
 
-.top a {
-  color: #ffffff;
-  text-shadow: 1.5px 1.5px 0px #1b1b1b;
-}
+  .box11 h2 {
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .list-margin {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+
+  .top a {
+    color: #ffffff;
+    text-shadow: 1.5px 1.5px 0px #1b1b1b;
+  }
 }
