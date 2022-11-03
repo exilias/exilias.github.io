@@ -6,7 +6,7 @@
 
 .margin-top {
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -23,24 +23,20 @@
 }
 
 .main h3 {
-  padding-top: 60px;
-  padding-bottom: 0px;
+  padding: 60px 20px 20px 20px;
   text-align: center;
   max-width: 100%;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .paper-list {
-  padding: 30px;
-  margin: 20px;
-  margin-top: 30px;
-  background-color: #eeeeee;
+  padding: 0 30px 30px 30px;
   align-items: center;
   justify-content: center;
 }
 
 .paper-list ol {
-  padding-top: 10px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -48,8 +44,6 @@
 }
 
 .list-margin {
-  margin-bottom: 15px;
-  margin-top: 5px;
   font-size: 15px;
   line-height: 30px;
   list-style: decimal;
@@ -94,10 +88,19 @@ mark {
     padding-top: 60px;
   }
 
+  .main h3 {
+    padding: 40px 10px 10px 10px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .paper-list {
     margin: 20px 10px 20px 10px;
     padding: 0;
   }
+
   .list-margin {
     font-size: 10px;
     line-height: 20px;
@@ -105,11 +108,6 @@ mark {
     padding-top: 10px;
     padding-bottom: 20px;
     padding-left: 30px;
-  }
-
-  h {
-    color: rgb(207, 0, 0);
-    text-shadow: none
   }
 
   .top a {
