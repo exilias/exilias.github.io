@@ -113,6 +113,17 @@ img {
   margin-bottom: 20px;
 }
 
+.bright-background {
+  background-color: #ffffff;
+}
+.dark-background {
+  background-color: #eeeeee;
+}
+
+.invert {
+  filter: invert(1.0);
+}
+
 
 @media(max-width:800px) {
 
