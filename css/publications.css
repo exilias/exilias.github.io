@@ -107,7 +107,7 @@ a.button {
   }
 
   .paper-list {
-    margin: 20px 10px 20px 10px;
+    margin: 10px 10px 10px 10px;
     padding: 0;
   }
 
@@ -123,5 +123,13 @@ a.button {
   .top a {
     color: #ffffff;
     text-shadow: 1.5px 1.5px 0px #1b1b1b;
+  }
+
+  a.button {
+    line-height: 26px;
+    font-size: 10px;
+    border-radius: 6px;
+    margin: 20px 5px 5px 0;
+    padding: 4px 10px 4px 10px;
   }
 }
