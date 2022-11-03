@@ -166,6 +166,7 @@ img {
     right: 0;
     color: #ffffff;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     background-color: #da1c1ce1;
     padding-top: 15px;
     padding-bottom: 50px;
