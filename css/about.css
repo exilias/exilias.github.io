@@ -12,19 +12,20 @@
 .about {
   padding-bottom: 0px;
   padding-left: 20px;
-  padding-right: 10px;
+  padding-right: 20px;
   max-width: 100%;
   font-size: 12px;
   margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .about::after {
   content: '';
   display: block;
-  width: 80px;
-  height: 3px;
-  background-color: #000;
+  width: 100px;
+  height: 5px;
+  background-color: #da1c1ce1;
   margin-top: 10px;
   left: 50%;
   transform: translateX(-50%);
@@ -37,25 +38,31 @@
   padding-top: 26px;
   align-items: center;
   flex-direction: row-reverse;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-me img {
-  width: 270px;
+  width: 250px;
   height: auto;
   position: relative;
-  padding-right: 20px;
+  margin-right: 60px;
+}
+
+span.name-english {
+  margin-left: 20px;
+  font-size: medium;
 }
 
 .text {
   display: block;
-  width: 50%;
   padding-right: 60px;
-  padding-left: 20px;
+  margin-left: 60px;
 }
 
 .text h3 {
   padding-bottom: 20px;
-  padding-left: 20px;
   font-size: 24px;
 }
 
@@ -64,48 +71,53 @@
 }
 
 .about-logo {
+  display: flex;
+  justify-content: flex-end;
   text-align: right;
   margin-top: 15px;
 }
 
 .about-logo img {
-  width: 50px;
+  width: 40px;
 }
 
 .about-logo a {
-  padding-right: 0;
+  width: 40px;
+  margin: 0 10px 0 10px;
 }
-
 
 .about-text h2 {
   text-align: center;
 }
 
-.box26 {
-  position: relative;
-  margin: 2em 10%;
-  padding: 1em 1em;
-  border: solid 3px #000000;
-  border-radius: 8px;
-  text-align: center;
+.resume {
+  margin: 20px 0 60px 0;
+  padding: 20px 0 20px 0;
+  color: #ffffff;
+  background-color: #da1c1ce1;
 }
 
-.box26 .box-title {
-  position: absolute;
-  display: inline-block;
-  top: -13px;
-  left: 10px;
-  padding: 0 9px;
-  line-height: 1;
-  font-size: 20px;
-  background: #FFF;
-  color: #000000;
-  font-weight: bold;
+.resume-content {
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 60px;
+  padding-left: 60px;
+  justify-content: center;
 }
 
-.box26 p {
-  margin: 0;
-  padding: 0;
+.resume dl {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 26px;
+}
+.resume dt {
+  float: left;
+}
+
+.resume dd {
+  margin-left: 140px;
 }
 
 .list-margin-a {
@@ -228,7 +240,6 @@ mark {
   }
 
   .about {
-    padding-left: 10px;
     text-align: center;
   }
 
@@ -240,7 +251,7 @@ mark {
   }
 
   .about-me img {
-    padding-right: 0;
+    margin-right: 0;
     padding-top: 10px;
     width: 220px;
     height: auto;
@@ -266,15 +277,15 @@ mark {
   }
 
   .about-logo {
-    display: flex;
     margin-top: 0;
-    margin-left: 170px;
-    width: 120px;
-    justify-content: flex-end;
+  }
+
+  .about-logo img {
+    width: 30px;
   }
 
   .about-logo a {
-    margin-right: 10px;
+    margin: 0 5px 0 5px;
   }
 
 
