@@ -44,10 +44,13 @@
 }
 
 .about-me img {
-  width: 250px;
-  height: auto;
   position: relative;
   margin-right: 60px;
+}
+
+.portrait-photo {
+  font-size: 7pt;
+  text-align: center;
 }
 
 span.name-english {
@@ -86,10 +89,6 @@ span.name-english {
   margin: 0 10px 0 10px;
 }
 
-.about-text h2 {
-  text-align: center;
-}
-
 .resume {
   margin: 20px 0 60px 0;
   padding: 20px 0 20px 0;
@@ -106,6 +105,18 @@ span.name-english {
   justify-content: center;
 }
 
+.resume h2::after {
+  content: '';
+  display: block;
+  width: 700px;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
 .resume dl {
   margin-bottom: 40px;
   margin-left: auto;
@@ -120,18 +131,8 @@ span.name-english {
   margin-left: 140px;
 }
 
-.list-margin-a {
-  margin-bottom: 6px;
-  margin-top: 5px;
-  font-size: 15px;
-  line-height: 24px;
-  list-style: disc;
-  list-style-position: inside;
-  text-indent: -1.2em;
-  padding: 0 0 0 2em;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: start;
+.paper-list ol {
+  max-width: 1000px;
 }
 
 .msr_bread06 {
@@ -182,19 +183,6 @@ span.name-english {
   border-left: 8px solid #000;
 }
 
-.list-margin {
-  margin-bottom: 45px;
-  margin-top: 5px;
-  font-size: 15px;
-  line-height: 22px;
-  list-style: decimal;
-  list-style-position: inside;
-  text-indent: -1.2em;
-  padding: 0 0 0 2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .main h2 {
   padding-top: 50px;
   padding-bottom: 40px;
@@ -202,11 +190,6 @@ span.name-english {
   padding-right: 10px;
   max-width: 100%;
   text-align: center;
-}
-
-.list-margin a {
-  color: rgb(207, 0, 0);
-  text-shadow: none
 }
 
 mark {
@@ -217,26 +200,11 @@ mark {
   border-radius: 30px
 }
 
-.box11 {
-  position: relative;
-  margin: 2em 10%;
-  padding: 1em 1em;
-  color: #000000;
-  background: white;
-  border-left: solid 2px #a5a5a5;
-  box-shadow: 0 0px 2px rgb(121, 121, 121);
-}
-
-.box11 p {
-  margin: 0;
-  padding: 0;
-}
-
 
 @media (max-width: 800px) {
 
   .main {
-    padding-top: 45px;
+    padding-top: 10px;
   }
 
   .about {
@@ -267,13 +235,34 @@ mark {
   .text h3 {
     padding-left: 0;
     padding-bottom: 10px;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .text p {
     line-height: 19px;
     font-size: 12px;
     text-align: left;
+  }
+
+  .resume-content {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .resume h2::after {
+    width: 380px;
+  }
+
+  .resume dl {
+    font-size: 14px;
+  }
+
+  .resume dt {
+    float: none;
+  }
+
+  .resume dd {
+    margin-left: 30px;
   }
 
   .about-logo {
@@ -288,41 +277,17 @@ mark {
     margin: 0 5px 0 5px;
   }
 
-
-  .list-margin-a {
-    font-size: 14px;
-  }
-
-  .box26 {
-    margin-top: 40px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 10px;
-    padding-top: 15px;
-    padding-left: 7px;
-  }
-
-  .box11 {
-    margin-right: 5%;
-    margin-left: 5%;
-    padding: 5px;
-  }
-
-
-  .box11 h2 {
-    font-size: 20px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-
-  .list-margin {
-    margin-bottom: 20px;
-    font-size: 13px;
-  }
-
-
   .top a {
     color: #ffffff;
     text-shadow: 1.5px 1.5px 0px #1b1b1b;
   }
+
+  .awards h2 {
+    padding: 40px 10px 10px 10px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 }
