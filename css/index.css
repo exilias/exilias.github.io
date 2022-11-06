@@ -172,6 +172,7 @@
 }
 
 img.portrait {
+  width: 340px;
   min-width: 300px;
 }
 
@@ -181,7 +182,7 @@ span.name-english {
 }
 
 .about-text {
-  max-width: 500px;
+  max-width: 600px;
   margin-left: 40px;
 }
 
