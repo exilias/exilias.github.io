@@ -207,12 +207,14 @@ img {
     background-color: #da1c1ce1;
     padding-top: 15px;
     padding-bottom: 50px;
-    display: none;
+    top: -320px;
+    transition: 0.3s ease-out;
   }
 
   .header-site-menu.is-show {
     position: fixed;
     display: block;
+    top: 0;
   }
 
   .toggle-menu-button {
