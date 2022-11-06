@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   padding-top: 26px;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row-reverse;
   max-width: 1000px;
   margin-left: auto;
@@ -87,6 +87,25 @@ span.name-english {
 .about-logo a {
   width: 40px;
   margin: 0 10px 0 10px;
+}
+
+.skill {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 10pt;
+}
+
+.skill dl {
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+.skill dt {
+  font-weight: bold;
+}
+
+.skill dd {
+  margin-left: 20px;
 }
 
 .resume {
